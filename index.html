@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio website</title>
+    <link rel="Stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="../myportfolio/assets/Images/Logo prakash-Photoroom.png" class="Logo">
+                <ul>
+                    <li> <a href="#"></a>Home </a></li>
+                    <li> <a href="#"></a>About </a></li>
+                    <li> <a href="#"></a>Services</a></li>
+                    <li> <a href="#"></a>Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Basic Designer </p>
+                <h1>Hi,I'm <span> Jyoti Prakash Upadhyay</span><br> from Nepal</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="../myportfolio/assets/Images/Prakash1-Photoroom-Photoroom.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="Sub-title"> About me</h1>
+                    <p> Hi I am Jyoti Prakash Upadhay, currently studying BCA at Bangalore University and working as a bicycle
+                        distributor company called Happy Earth. I have a keen interest in web development and am
+                        actively learning the skills required to build and maintain websites. In addition to my
+                        professional and academic pursuits, I am passionate about continuous learning and
+                        self-improvement. I am always eager to take on new challenges and expand my knowledge base. </p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="openTab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('Education')">Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="Skills">
+                        <ul>
+                            <li><span>Basic Developer</span><br>Designing Web/App interface</li>
+                            <li><span>Web development</span><br>Designing Web/App interface</li>
+                            <li><span>App Developer</span><br>Designing Web/App interface</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="Experience">
+                        <ul>
+                            <li><span>2024-current</span><br>Design learning</li>
+                            <li><span>2022-current</span><br>Working in a Bicycle Distributor at Happy Earth LLP</li>
+                            <li><span>2019-2021</span><br>Voluntary work in different sectors</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="Education">
+                        <ul>
+                            <li><span>2020</span><br>10th from Aristo Dhangadhi</li>
+                            <li><span>2022</span><br>12th Science from Galaxy Dhangadhi</li>
+                            <li><span>2023-Current</span><br>BCA from Bangalore University</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ <div id="services">
+    <div class="container">
+        <h1 class="Sub-title">My Services</h1> 
+        <div class="services-list">
+            <div>
+                
+                <h2>Web Design</h2>
+                <p>Just learning so no services at all </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>HTML Basic</h2>
+                <p>Just learning so no services at all </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>CSS Basic</h2>
+                <p>Just learning so no services at all </p>
+                <a href="#">Learn more</a>
+            </div>
+
+        </div> 
+    </div>
+ </div>
+ <div id="Portfolio">
+    <div class="container">
+        <h1 class="Sub-title"> My Work</h1>
+        <div class="work-list">
+         <div class="work">
+            <img src="../myportfolio/assets/Images/work-1.png">
+        <div class="layer">
+            <h3>Social Media App</h3>
+            <p>The App connects you to te tallented people around the world.Download it from Play/App store.</p>
+            
+        </div> 
+        </div>
+         <div class="work">
+            <img src="../myportfolio/assets/Images/work-2.png">
+            <div class="layer">
+                <h3>Music  App</h3>
+                <p>The App connects you to te tallented people around the world.Download it from Play/App store.</p>
+                
+            </div> 
+         </div>
+         <div class="work">
+            <img src="../myportfolio/assets/Images/work-3.png">
+            <div class="layer">
+                <h3>Online Shopping  App</h3>
+                <p>The App connects you to te tallented people around the world.Download it from Play/App store.</p>
+                
+            </div> 
+         </div>
+        </div>
+
+        <a href="#" class="btn">See More </a>
+    </div>
+ </div>
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="Sub-title">Contact Me</h1>
+                <p>Prkash788@gmail.com</p>
+                <p>8088692577</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-Instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-Whatsapp"></i></a>
+                    
+                </div>
+            </div>
+                <div class="contact-right"></div>
+            
+        </div>
+    </div>
+ </div>
+    <script>
+        var tabLinks = document.getElementsByClassName("tab-links");
+        var tabContents = document.getElementsByClassName("tab-content");
+
+        function openTab(tabName) {
+            for (var tabLink of tabLinks) {
+                tabLink.classList.remove("active-link");
+            }
+            for (var tabContent of tabContents) {
+                tabContent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabName).classList.add("active-tab");
+        }
+
+    </script>
+</body>
+
+</html>
